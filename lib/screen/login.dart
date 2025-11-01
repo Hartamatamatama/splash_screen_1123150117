@@ -32,7 +32,7 @@ class Login extends StatelessWidget {
                 TextField(
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
-                    icon: Icon(Icons.email_outlined),
+                    prefixIcon: Icon(Icons.email_outlined),
                     label: Text("Email"),
                     hint: Text("Masukkan email Anda"),
                     enabledBorder: OutlineInputBorder(
@@ -53,7 +53,8 @@ class Login extends StatelessWidget {
                 TextField(
                   obscureText: true,
                   decoration: InputDecoration(
-                    icon: Icon(Icons.lock_outlined),
+                    prefixIcon: Icon(Icons.lock_outline),
+                    suffixIcon: Icon(Icons.visibility_outlined),
                     label: Text("Password"),
                     hintText: 'Masukkan password Anda',
                     enabledBorder: OutlineInputBorder(
