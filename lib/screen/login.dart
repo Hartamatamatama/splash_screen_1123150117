@@ -10,15 +10,27 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Container(
-          padding: EdgeInsets.all(20.0),
-          child: const Column(
-            children: [
-              SizedBox(height: 10),
-              Icon(Icons.lock_outline, size: 80.0, color: Colors.deepPurple),
-              SizedBox(height: 10.0),
-            ],
+      body: Center(
+        child: SingleChildScrollView(
+          child: Container(
+            padding: EdgeInsets.all(20.0),
+            child: const Column(
+              children: [
+                SizedBox(height: 10),
+                Icon(Icons.lock_outline, size: 80, color: Colors.deepPurple),
+                SizedBox(height: 10),
+                Text(
+                  'Selamat Datang',
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
+                SizedBox(height: 20),
+                Text(
+                  'Silahkan login untuk melanjutkan',
+                  style: TextStyle(fontSize: 20, color: Colors.grey),
+                ),
+                SizedBox(height: 50),
+              ],
+            ),
           ),
         ),
       ),
