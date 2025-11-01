@@ -35,6 +35,9 @@ class Login extends StatelessWidget {
                     icon: Icon(Icons.email_outlined),
                     label: Text("Email"),
                     hint: Text("Masukkan email Anda"),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                    ),
                     // hintText: "halo",
                   ),
                 ),
@@ -45,7 +48,9 @@ class Login extends StatelessWidget {
                     icon: Icon(Icons.lock_outlined),
                     label: Text("Password"),
                     hintText: 'Masukkan password Anda',
-                    // border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                    ),
                   ),
                 ),
                 SizedBox(height: 20),
