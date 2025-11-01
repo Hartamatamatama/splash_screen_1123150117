@@ -14,7 +14,7 @@ class Login extends StatelessWidget {
         child: SingleChildScrollView(
           child: Container(
             padding: EdgeInsets.all(20.0),
-            child: const Column(
+            child: Column(
               children: [
                 SizedBox(height: 10),
                 Icon(Icons.lock_outlined, size: 80, color: Colors.deepPurple),
@@ -23,10 +23,10 @@ class Login extends StatelessWidget {
                   'Selamat Datang',
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 10),
                 Text(
                   'Silahkan login untuk melanjutkan',
-                  style: TextStyle(fontSize: 20, color: Colors.grey),
+                  style: TextStyle(fontSize: 15, color: Colors.deepPurple),
                 ),
                 SizedBox(height: 50),
                 TextField(
@@ -35,8 +35,16 @@ class Login extends StatelessWidget {
                     icon: Icon(Icons.email_outlined),
                     label: Text("Email"),
                     hint: Text("Masukkan email Anda"),
-                    border: OutlineInputBorder(
+                    enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(12)),
+                      borderSide: BorderSide(color: Colors.grey[300]!),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                      borderSide: BorderSide(
+                        color: Colors.deepPurple[700]!,
+                        width: 2,
+                      ),
                     ),
                     // hintText: "halo",
                   ),
@@ -48,8 +56,16 @@ class Login extends StatelessWidget {
                     icon: Icon(Icons.lock_outlined),
                     label: Text("Password"),
                     hintText: 'Masukkan password Anda',
-                    border: OutlineInputBorder(
+                    enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(12)),
+                      borderSide: BorderSide(color: Colors.grey[300]!),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                      borderSide: BorderSide(
+                        color: Colors.deepPurple[700]!,
+                        width: 2,
+                      ),
                     ),
                   ),
                 ),
