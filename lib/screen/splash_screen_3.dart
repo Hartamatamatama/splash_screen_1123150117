@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:splash_screen_1123150117/main.dart';
+import 'package:splash_screen_1123150117/screen/login.dart';
 import 'package:splash_screen_1123150117/screen/splash_screen_1.dart';
 
 class SplashScreen3 extends StatelessWidget {
@@ -81,7 +82,7 @@ class SplashScreen3 extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SplashScreen1()),
+                      MaterialPageRoute(builder: (context) => Login()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
