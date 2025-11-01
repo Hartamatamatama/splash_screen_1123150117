@@ -17,7 +17,7 @@ class Login extends StatelessWidget {
             child: const Column(
               children: [
                 SizedBox(height: 10),
-                Icon(Icons.lock_outline, size: 80, color: Colors.deepPurple),
+                Icon(Icons.lock_outlined, size: 80, color: Colors.deepPurple),
                 SizedBox(height: 10),
                 Text(
                   'Selamat Datang',
@@ -32,17 +32,20 @@ class Login extends StatelessWidget {
                 TextField(
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
+                    icon: Icon(Icons.email_outlined),
                     label: Text("Email"),
-                    // hint: Text("Masukkan email Anda"),
-                    hintText: "halo",
+                    hint: Text("Masukkan email Anda"),
+                    // hintText: "halo",
                   ),
                 ),
                 SizedBox(height: 20),
                 TextField(
                   obscureText: true,
                   decoration: InputDecoration(
-                    hintText: 'Password',
-                    border: OutlineInputBorder(),
+                    icon: Icon(Icons.lock_outlined),
+                    label: Text("Password"),
+                    hintText: 'Masukkan password Anda',
+                    // border: OutlineInputBorder(),
                   ),
                 ),
                 SizedBox(height: 20),
