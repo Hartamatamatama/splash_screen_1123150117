@@ -29,6 +29,29 @@ class Login extends StatelessWidget {
                   style: TextStyle(fontSize: 20, color: Colors.grey),
                 ),
                 SizedBox(height: 50),
+                TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    label: Text("Email"),
+                    // hint: Text("Masukkan email Anda"),
+                    hintText: "halo",
+                  ),
+                ),
+                SizedBox(height: 20),
+                TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    hintText: 'Password',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                SizedBox(height: 20),
+                // ElevatedButton(
+                //   onPressed: () {
+                //     // Handle login
+                //   },
+                //   child: Text('Login'),
+                // ),
               ],
             ),
           ),
